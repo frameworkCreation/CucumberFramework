@@ -19,4 +19,9 @@ public class Reporters {
 		final byte[] screenshot = ((TakesScreenshot)drv).getScreenshotAs(OutputType.BYTES);
 		logger.embed(screenshot, "image/png");
 	}
+	public static void CaptureScreenshot_1(WebDriver drv,Scenario logger)
+	{
+		final byte[] screenshot = ((TakesScreenshot)drv).getScreenshotAs(OutputType.BYTES);
+		logger.embed(screenshot, "image/png");
+	}
 }

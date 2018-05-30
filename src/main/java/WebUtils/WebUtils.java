@@ -7,6 +7,7 @@ import org.openqa.selenium.support.ui.Select;
 
 public class WebUtils {
 
+
 	public static WebElement FindElement(WebDriver driver, String locator, String locatorValue) {
 		WebElement we = null;
 		if (locator.equalsIgnoreCase("Xpath")) {
@@ -85,6 +86,7 @@ public class WebUtils {
 
 		Select select = new Select(FindElement(driver, locator, locatorValue));
 		select.deselectAll();
+
 
 	}
 }
